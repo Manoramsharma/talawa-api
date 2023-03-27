@@ -177,6 +177,13 @@ const eventSchema = new Schema({
       required: true,
     },
   ],
+  volunteers: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
+  ],
   organization: {
     type: Schema.Types.ObjectId,
     ref: "Organization",
